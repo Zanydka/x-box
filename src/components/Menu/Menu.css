@@ -1,0 +1,11 @@
+.marg-left{
+    float:left;
+    padding-left:5px
+}
+.marg-right{
+    float:left;
+    padding-right:5px
+}
+.b-c-white{
+    background-color: white;
+}
