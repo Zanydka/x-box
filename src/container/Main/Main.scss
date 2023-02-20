@@ -3,3 +3,48 @@
 	background: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 100%);
 	height: 2870px;
 }
+.news{	
+	height: 865px;
+}
+.exclusive{
+	text-align: center;	
+	height: 880px;
+	background-image: url("../../assets/Rectangle.png");
+}
+.lab{	
+	height: 480px;
+	left: 0px;
+	top: 2449px;
+	background-image: url("../../assets/Lab.png");
+}
+.xbox-white{
+	position: absolute;
+	width: 63px;
+	height: 64px;
+	left: 800px;
+	top: 746px;
+}
+.theBest{
+	padding-top: 45px;
+	height: 57px;
+	text-align: center;
+	font-family: 'HelveticaNeue';
+	font-size: 48px;
+	line-height: 56px;
+	color: #FFFFFF;
+}
+.inGames{
+	text-align: center;
+	font-family: 'HelveticaNeue';
+	font-size: 36px;
+	line-height: 42px;
+	color: #FFFFFF;
+}
+// .exclusiveGames{
+// 	text-align: center;
+// 	font-family: 'HelveticaNeue';
+// 	font-size: 50px;
+// 	line-height: 42px;
+// 	color: #7DD42F;
+// 	padding-top: 65px;
+// }

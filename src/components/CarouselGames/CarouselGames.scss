@@ -1,0 +1,49 @@
+h1{
+    color: #7DD42F;
+}
+.card{
+    background: #FFFFFF;
+    border: 1px solid #8DD83D;
+    border-radius: 4px;  
+    height:420px;
+    opacity:90.14%;
+    margin: 15px;
+    padding: 15px;
+}
+img.imghw{
+    height: 180px;
+    width: 315px;
+}
+.seeDetails{
+    width:315px;
+    height:60px;
+    background: #8DD83D;
+    top:75%;
+    font-family: 'HelveticaNeue';
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-top: 30%;
+}
+.v-align{
+    padding-top: 5%;
+}
+a{
+    text-decoration: none;
+}
+.slick-prev::before {
+    content: url("../../assets/icon-prev.png");
+}
+.slick-next:before {
+    content: url("../../assets/icon-next.png");
+}
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #8DD83D;
+}
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #8DD83D;
+}
+.slick-dots li button:before {
+    color: #8DD83D;}
