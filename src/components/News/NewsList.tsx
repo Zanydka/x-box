@@ -4,18 +4,22 @@ type Props = {
     title: string
     about: string
     btndesc: string
+    image: string
 }
-const NewsList = (props: Props) => {
+const NewsList = ({ title, about, btndesc, image }: Props) => {
     return (
         <Card className="news">
             <CardContent>
-                <img src="" alt="" />
-                <div className="news-title">{props.title}</div>
-                <div className="about">{props.about}</div>
+                <div className="news-img">
+                    <img src={image} alt="" />
+                </div>
+
+                <div className="news-title">{title}</div>
+                <div className="about">{about}</div>
             </CardContent>
             <CardActions className="btn-wrap">
                 <Button variant="contained" className="btn-see">
-                    {props.btndesc}
+                    {btndesc}
                 </Button>
             </CardActions>
         </Card>
