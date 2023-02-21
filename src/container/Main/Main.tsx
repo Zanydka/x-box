@@ -3,6 +3,7 @@ import CarouselBox from '../../components/CarouselBox/CarouselBox.js'
 import CarouselGames from '../../components/CarouselGames/CarouselGames.js'
 import { Container } from '@mui/material'
 import xboxWhite from '../../assets/xboxWhite.png'
+import News from '../../components/News/News'
 type Props = {}
 const Main = (props: Props) => {
     return (
@@ -19,6 +20,7 @@ const Main = (props: Props) => {
                     />
                     <p className="theBest">The best value</p>
                     <p className="inGames">in games and entertainment</p>
+                    <News />
                 </div>
             </Container>
             <Container maxWidth="lg">
