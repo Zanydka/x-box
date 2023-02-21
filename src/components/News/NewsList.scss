@@ -1,0 +1,28 @@
+.news-title {
+    font-family: 'HelveticaNeue';
+    font-size: 24px;
+    line-height: 28px;
+    color: #435766;
+    text-align: center;
+}
+
+.about{
+    font-family: 'HelveticaNeue';
+    font-size: 18px;
+    line-height: 21px;
+    color: #435766;
+}
+.btn-wrap {
+    display: flex;
+    justify-content: center;
+}
+button.btn-see{
+    background-color: #8DD83D;
+    border-radius: 4px;
+    color: #FFFFFF;
+    width: 95%;
+}
+button.css-sghohy-MuiButtonBase-root-MuiButton-root:hover {
+    background-color: #27b61a;
+}
+
