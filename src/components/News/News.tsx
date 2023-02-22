@@ -9,6 +9,7 @@ type newsProps = {
     about: string
     btndesc: string
     image: string
+    category?: string
 }
 
 type Props = {}
@@ -23,18 +24,18 @@ const News = (props: Props) => {
                 alignItems="center"
                 spacing={8}
             >
-                {NewsArray.map(
-                    ({ id, title, about, btndesc, image }: newsProps) => (
-                        <Grid item xs={12} sm={6} md={4} key={id}>
-                            <NewsList
-                                title={title}
-                                about={about}
-                                btndesc={btndesc}
-                                image={image}
-                            />
-                        </Grid>
-                    )
-                )}
+                {NewsArray.filter(
+                    ({ category }: newsProps) => category === 'home-page'
+                ).map(({ id, title, about, btndesc, image }: newsProps) => (
+                    <Grid item xs={12} sm={6} md={4} key={id}>
+                        <NewsList
+                            title={title}
+                            about={about}
+                            btndesc={btndesc}
+                            image={image}
+                        />
+                    </Grid>
+                ))}
             </Grid>
         </div>
     )

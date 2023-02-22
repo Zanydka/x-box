@@ -3,3 +3,19 @@
     left: 0px;
     top: 3px;
 }
+.slick-prev::before {
+    content: url("../../assets/icon-prev.png");
+}
+.slick-next:before {
+    content: url("../../assets/icon-next.png");
+}
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #8DD83D;
+}
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #8DD83D;
+}
+.slick-dots li button:before {
+    color: #8DD83D;}
