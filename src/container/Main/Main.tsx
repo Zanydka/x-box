@@ -1,28 +1,23 @@
 import './Main.scss'
-import CarouselBox from '../../components/CarouselBox/CarouselBox.js'
 import CarouselGames from '../../components/CarouselGames/CarouselGames.js'
 import { Container } from '@mui/material'
-import xboxWhite from '../../assets/xboxWhite.png'
-import News from '../../components/News/News'
+import Home from '../../pages/Home/Home'
+import { Routes, Route } from 'react-router-dom'
+import ConsolesNews from '../../pages/ConsolesNews/ConsolesNews'
+import GamesNews from '../../pages/GamesNews/GamesNews'
+import GamePassNews from '../../pages/GamePassNews/GamePassNews'
+import XBoxS from '../../pages/ConsolesNews/AllConsoleNews/XBoxS'
 type Props = {}
 const Main = (props: Props) => {
     return (
         <div className="content">
-            <Container maxWidth="lg">
-                <CarouselBox />
-            </Container>
-            <Container maxWidth="lg">
-                <div className="news">
-                    <img
-                        src={xboxWhite}
-                        alt="xboxWhite"
-                        className="xbox-white"
-                    />
-                    <p className="theBest">The best value</p>
-                    <p className="inGames">in games and entertainment</p>
-                    <News />
-                </div>
-            </Container>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/ConsolesNews" element={<ConsolesNews />} />
+                <Route path="/GamesNews" element={<GamesNews />} />
+                <Route path="/GamePassNews" element={<GamePassNews />} />
+                <Route path="/XBoxS" element={<XBoxS />} />
+            </Routes>
             <Container maxWidth="lg">
                 <div className="exclusive">
                     <CarouselGames />
